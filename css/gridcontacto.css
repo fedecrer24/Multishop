@@ -1,0 +1,96 @@
+.contenedorgrid{
+    display: grid;
+    padding: 0;
+    margin: 0;
+    
+    height: 80px;/*alto de los fr*/
+    /* width: 800px; /*ancho de los fr*/
+    grid-template-columns: 1fr  1fr 1fr ;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    'header header header'
+    'iconos iconos iconos'
+    'fotitos fotitos fotitos'  /* 'asi1 pepito asi2'*/
+    'footer footer footer';
+    gap: 10px;
+}
+
+.nav-bg{
+    grid-area: header;
+
+    /* background-color: blue;*/
+    /*height: 40px;*/
+}
+
+.iconhover{
+    grid-area: iconos;
+    
+}
+
+/*.carousel{
+    grid-area: pepito;
+}*/
+
+.logosderopas{
+    grid-area: fotitos;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: yellow;
+
+    text-align: center;
+    border-radius: 20px;
+    background-color:  rgb(11, 85, 75);
+    color: white; 
+   /* height: 100px;*/
+   display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.cajita{
+    display: flex;
+    flex-direction: column;
+}
+
+
+ /*(max-width:780px)  celuuuuuu*/
+ @media  (max-width:780px) {
+
+    
+    .logosderopas{
+        grid-area: fotitos;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .ul{
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+
+    
+
+    .ol{
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+        
+    }
+ }

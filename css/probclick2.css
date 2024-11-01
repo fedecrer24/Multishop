@@ -1,0 +1,87 @@
+body {
+    font-size: 16px;
+    font-family:"Noto Sans", sans-serif;
+   /* background-image: linear-gradient(to top, var(--fondo) 0%, var(--blanco) 100%);*/
+   margin: 0;
+   padding: 0;
+}
+
+.sombra {
+    -webkit-box-shadow: 1px 7px 17px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 7px 17px -5px rgba(0,0,0,0.75);
+    box-shadow: 1px 7px 17px -5px rgba(0,0,0,0.75);
+    background-color: rgb(11, 85, 75);
+width: 50%;
+/*margin-left: 25%;*/
+padding: 2rem;
+margin-top: 0.5rem;
+}
+
+
+
+/*destinos*/
+.contenedor-mayor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Para que los contenedores estén uno encima del otro */
+    /* margin-top: 3%;*/
+    background-color: black;
+    padding: 10px;
+    
+}
+.contenedor-destinos {
+    display: inline-block;
+    margin-right: 20px; /* Ajusta el espacio entre las imágenes */
+    position: relative;
+    width: 400px; /* Ancho deseado para los contenedores */
+    height: 500px; /* Altura deseada para los contenedores */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se desborde */
+}
+
+.contenedor:last-child {
+    margin-right: 0; /* Para que no haya margen derecho en la última imagen */
+}
+
+.texto-dest {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--negro);
+    transition: transform 0.3s ease; /* Transición suave para la animación */
+    font-size: 18px;
+}
+
+
+.contenedor-destinos:hover .texto-dest{
+    transform: translate(-50%, -50%) scale(1.1); /* Escala la imagen al 110% */
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Para heredar el color del texto */
+    transition: transform 0.3s ease; /* Transición suave para la animación */
+}
+
+.todas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: 100%; /* Hace que la imagen ocupe todo el alto del contenedor */
+    object-fit: cover; /* Escala la imagen para que ocupe todo el contenedor */
+    object-position: center; /* Centra la imagen dentro del contenedor */
+    transition: transform 0.3s ease; /* Transición suave para la animación */
+}
+
+.contenedor-destinos:hover img {
+    transform: scale(1.1); /* Escala la imagen al 110% */
+}
+
+

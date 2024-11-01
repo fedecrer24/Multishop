@@ -1,0 +1,101 @@
+.contenedorgrid{
+    display: grid;
+    padding: 0;
+    margin: 0;
+    
+    height: 80px;/*alto de los fr*/
+    /* width: 800px; /*ancho de los fr*/
+    grid-template-columns:1fr 1fr 1fr  ;
+    grid-template-rows:1fr 1fr 1fr 45px ;
+    grid-template-areas:
+    'header header header '
+    'pepito pepito pepito '
+    'click click click'          /*'asi1 pepito asi2'*/
+    'footer footer footer';
+    gap: 10px;
+}
+
+.nav-bg{
+    grid-area: header;
+    z-index: 1;
+   /* background-color: blue;*/
+    /*height: 40px;*/
+}
+
+
+
+.slide{
+    grid-area: pepito;
+    
+    
+}
+
+/*.carousel{
+    grid-area: pepito;
+}*/
+
+/*.contenedor-destinosa{
+    grid-area: click1;
+}
+
+.contenedor-destinosb{
+    grid-area: click2;
+}
+
+.contenedor-destinosc{
+    grid-area: click3;
+}*/
+.contenedor-mayor{
+    grid-area: click;
+}
+
+footer {
+    grid-area: footer;
+    background-color: yellow;
+
+    text-align: center;
+    border-radius: 20px;
+    background-color:  rgb(11, 85, 75);
+    color: white; 
+   /* height: 100px;*/
+   display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+/*ESTILOS A LAS LETRAS DEL CARRUSEL*/
+/*.carrusel {
+    background: linear-gradient(to right, var(--azul), rgb(247, 187, 151));
+}*/
+
+
+
+
+
+/*CALZADOS*/ /*letras del carrusel*/
+.text-shadow {
+    font-size: 4rem;
+    color: var(--azul);
+   /* text-shadow: -3px 3px #ffffff, -3px -3px #ffffff, 3px -3px #ffffff, 3px 3px #f3f3f2, 6px 6px #6ac7c2;*/
+    text-shadow: -3px 3px black, -3px -3px black, 3px -3px black, 3px 3px lightslategrey, 6px 6px #6ac7c2;
+}
+
+/*ACCESORIOS*/
+.text-shadow1 {
+    font-size: 4rem;
+    color: green;
+    text-shadow: -3px 3px #ffffff, -3px -3px #ffffff, 3px -3px #ffffff, 3px 3px #f3f3f2, 6px 6px #6ac7c2;
+}
+
+/*INDUMENTARIA*/
+.text-shadow2 {
+    font-size: 4rem;
+    color: black;
+    /*text-shadow: -3px 3px #ffffff, -3px -3px #ffffff, 3px -3px #ffffff, 3px 3px #f3f3f2, 6px 6px #6ac7c2;*/
+    text-shadow: -3px 3px #ffffff, -3px -3px #ffffff, 3px -3px #ffffff, 3px 3px #f3f3f2, 6px 6px #6ac7c2;
+}
+
+/*
+#destinos{
+    grid-area: destinos;
+}*/

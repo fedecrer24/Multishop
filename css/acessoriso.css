@@ -1,0 +1,32 @@
+.contendorcard{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+
+}
+
+.c1{
+    padding-right: 50px; /*espacio entre las cards*/
+    padding-top: 20px;
+}
+
+
+ /*(max-width:780px)  celuuuuuu*/
+ @media  (max-width:780px) {
+
+    .contendorcard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; /* Para que los contenedores estén uno encima del otro */
+        /* margin-top: 3%;*/
+    
+        
+    }
+    
+ }
+
+
+
